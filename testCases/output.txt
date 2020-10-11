@@ -54,7 +54,7 @@ output_tc6.txt
 -----------------------------------------
     referential integrity normalized
 T1                Y               N
-T2                Y               Y
+T2                Y               N
 T3                Y               Y
 T4                N               N
 DB referential integrity: N

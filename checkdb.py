@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import sys
 import database
-import back
 import schema
 import utils
 
@@ -31,14 +30,14 @@ try:
     print('*******************************')
     print('*******************************\n')
 
-    with open('password.txt') as f:
+    with open('user.txt') as f:
         lines = [line.rstrip() for line in f]
 
     username = lines[0]
     pg_password = lines[1]
+    database = lines[2]
 
     testDb = database.Database(inputSchema, username, pg_password)
-    # testDb = backDb.Database(inputSchema, username, pg_password)
 
     testDb.checkRefInt()
     
@@ -60,7 +59,7 @@ try:
     print('*******************************')
     print('*******************************\n')
 
-    # utils.printFormat(inputSchema)
+    utils.printFormat(inputSchema)
     utils.printResult(inputSchema)
 
     # save the name of the file and schema results to

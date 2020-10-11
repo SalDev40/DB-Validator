@@ -4,8 +4,8 @@ from psycopg2 import sql
 
 
 class Database:
-    def __init__(self, schema, username, pg_password):
-        self.conn = psycopg2.connect(database="COSC3380",
+    def __init__(self, schema, username, database, pg_password):
+        self.conn = psycopg2.connect(database=database,
                                      user=username,
                                      password=pg_password)
 
@@ -25,8 +25,6 @@ class Database:
                        \n DB REF INT CHECKING TABLE:", table,
                       "\n*********************************")
 
-                # TODO: remove the print() for these 3 checks when turning in
-                # already display messafe in schema check
 
                 # if table has no fk nothing to check
                 if(len(self.schema[table]['Fks']) == 0):
