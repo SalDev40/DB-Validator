@@ -1,0 +1,15 @@
+T1(K(pk),K2(fk:T2.K4),K3(fk:T5.K7),A,B)
+
+T2(K4(pk),K5(fk:T1.K),K6(fk:T7.K12),K6(fk:T12.K4),C,E,F,G)
+
+T4(L)
+
+T5(K7(pk), K8(fk:T6.K9) ,A, B)
+
+T6(K9(pk),K10(fk:T1.K), K10(fk:T2.K4),K11(fk:T5.K7),C)
+
+T7(K12(pk),K13(fk:T1.K),K14(fk:T2.R))
+
+T8(K15(pk),K16(fk:T2.K6),K17(fk:T1.K), K18(fk:T2.K4),A,B,C,D)
+
+
