@@ -29,18 +29,18 @@
     dbxyz.txt
 
     --------------------------------------
-    T1(K(pk),K2(fk:T2.K2),A,B)
-    T2(K2(pk),C)
-    T3(K3(pk),D,E)
-    T4(K4(pk),K3(fk:T3.K3),F)
+    - T1(K(pk),K2(fk:T2.K2),A,B) 
+    - T2(K2(pk),C)
+    - T3(K3(pk),D,E)
+    - T4(K4(pk),K3(fk:T3.K3),F)
 
     --------------------------------------
-    Sample output file:refintnorm.txt
+    Sample output file: refintnorm.txt
     -----------------------------------------
-    referential integrity     normalized
-    T1              Y                  Y
-    T2              N                  Y
-    T3              N                  Y
-    T4              Y                  Y
-    DB referential integrity: N
-    DB normalized: Y
+    - referential integrity     normalized
+    - T1              Y                  Y
+    - T2              N                  Y
+    - T3              N                  Y
+    - T4              Y                  Y
+    - DB referential integrity: N
+    - DB normalized: Y
